@@ -1,26 +1,3 @@
-'''
-1) endowments and Endowment assurance is done. For Joint Life the code is commented out due to errors. However, the
-Logic in the code is applied.
-
-2)Lapse is done for whole-life and term-life assurance using the Poisson distribution, where the probability of lapsing
-is either 0 or 1 at the date premium. PV_in, PV_out, and cashflows were affected because of lapses where
-All the necessary adjustments are made. Adjustments are also made for unusual data errors that might come.
-
-3)PV of Liabitites is taken out by taking project date as 2024.
-
-4) A new function is created where you need to give an asset value at the beginning, and then it splits into the correct
-propionate along with rebalancing at the start of the year or whenever the cash balance is less than 0.
-
-5) The percentile method is used with the correct average value in order to predict.
-
-6 ) interest rates and inflation are rates are updates with Ornstien Uhbleck continous model
-
-7 ) Typos in the code that was in the videos related to gender was corrected
-
-8) A new function is added because the dates in the file used - instead of /
-'
-'''
-
 import datetime
 import random
 import numpy as np
